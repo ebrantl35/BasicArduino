@@ -35,7 +35,9 @@ void loop() {
 
 ### Image
 
+![Basic Arduino](/images/helloworld.png)
+
 ### Reflection
 
-
+This was a very fun assignment! It was nice to be able to do some hands-on work instead of just using the computer. Unfortunately, not all of my supplies survived my first attempt with the breadboard, and my poor red LED met an untimely demise. But,on the bright side, I now know the consequences of connecting GND to the positive end of the LED. Another issue I had was that I didn't realize that you can push the wires into the breadboard. I was sitting at my desk for like 20 minutes just trying to balance all of the wires carefully on the very top of the breadboard and getting really frustrated when they kept falling. But, I eventually figured it out so it's all good now. I was surprised by how simple working with the breadboard was! Seeing all the numbers and letters made it seem pretty complicated, so it was a pleasant surprise when I found out that they don't really matter!
 
