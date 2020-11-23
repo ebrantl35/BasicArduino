@@ -10,7 +10,7 @@
 In this assignment we were supposed to make an LED turn on, and to write a code that said "Hello World". We then switched to making the LED blink, and changed the code to make it say "Blink". On the physical Arduino, we connected a wire from pin 13 to the breadboard, which the connected to a resistor. The resistor led to the positive end of the LED, and then electricity flowed through the LED into the negative end, which was connected back to GND with a wire.
 
 ### Evidence
-
+---C++
 /* Hello Arduino
 Evie Brantley-11/16
 It blinks a light on and off! REMEMBER: The long end of the LED is the positive end!!
@@ -31,7 +31,7 @@ void loop() {
  digitalWrite(13,LOW);
  delay(250);//this makes it blink off for half a second- a full second is considered 1000
 }
-
+---
 
 ### Image
 
