@@ -2,6 +2,7 @@
 
 ## Table of Contents
 * [Hello Arduino](#Hello_Arduino)
+* [Finite LED Blinker] (#Finite_LED_Blinker) 
 
 ## Hello Arduino
 
@@ -11,13 +12,13 @@ In this assignment we were supposed to make an LED turn on, and to write a code 
 
 ### Evidence
 
-/* Hello Arduino
+```/* Hello Arduino
 Evie Brantley-11/16
 It blinks a light on and off! REMEMBER: The long end of the LED is the positive end!!
 Don't let blue and green LEDs burn like poor red LED!! :( Connect GND (ground(negative)) to the breadboard,
 then connect NEGATIVE(SHORT) end of led in same row, then put in positive in another row. In the + row,
 add a resistor, then put the other end of resistor in another row, which you then connect with a wire to the pin you coded!
-(In this case, pin 13)*/
+(In this case, pin 13)*/ 
 
 void setup() {
   Serial.begin(9600);
@@ -30,7 +31,7 @@ void loop() {
  delay(100);
  digitalWrite(13,LOW);
  delay(250);//this makes it blink off for half a second- a full second is considered 1000
-}
+} ```
 
 
 ### Image
