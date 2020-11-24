@@ -31,8 +31,8 @@ void loop() {
  delay(100);
  digitalWrite(13,LOW);
  delay(250);//this makes it blink off for half a second- a full second is considered 1000
-} ```
-
+}
+```
 
 ### Image
 
@@ -42,3 +42,46 @@ void loop() {
 
 This was a very fun assignment! It was nice to be able to do some hands-on work instead of just using the computer. Unfortunately, not all of my supplies survived my first attempt with the breadboard, and my poor red LED met an untimely demise. On the bright side, I now know the consequences of connecting GND to the positive end of the LED. Another issue I had was that I didn't realize that you can push the wires into the breadboard. I was sitting at my desk for like 20 minutes just trying to balance all of the wires carefully on the very top of the breadboard and getting really frustrated when they kept falling. But, I eventually figured it out so it's all good now. I was surprised by how simple working with the breadboard was! Seeing all the numbers and letters made it seem pretty complicated, so it was a pleasant surprise when I found out that they don't really matter!
 
+---
+
+## Finite LED Blinker
+
+### Description
+
+In this assignment, we were supposed to make a LED blink on and off a set number of times, then turn off. We got to learn about variables and conditional statements! The wiring on the physical Arduino was the same as last time.
+
+### Evidence
+
+```/* Evie Brantley 11/24/20
+Code blinks an LED 5 times, then stops.
+*/
+int counter = 0;//the variables always go before the setup
+void setup() {
+  Serial.begin(9600);
+  pinMode (13, OUTPUT);
+}
+
+void loop() {
+  counter=counter+1;//This is how the variable adds one every loop! Could also be written as: x = x++
+  if (counter >= 5) { //this code is used if the counter is greater than or equal to five
+    Serial.println("Off");
+    digitalWrite(13, LOW);//turns LED off
+  }
+  else {//since I only had two options, I use "if,else". If I had more I would use "if, else if, else"
+    Serial.println("On");//
+    digitalWrite(13, HIGH) ;//turns LED on
+    delay(1000);//1 second delay
+    digitalWrite(13, LOW);//turns LED off
+    delay(1000);
+     }
+}
+
+```
+
+### Image
+
+![Finite LED Blinker](/images/finiteLED.mp4)
+
+### Reflection
+
+This assignment went smoothly for the most part! 
