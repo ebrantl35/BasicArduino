@@ -52,7 +52,8 @@ In this assignment, we were supposed to make a LED blink on and off a set number
 
 ### Evidence
 
-```/* Evie Brantley 11/24/20
+```
+/* Evie Brantley 11/24/20
 Code blinks an LED 5 times, then stops.
 */
 int counter = 0;//the variables always go before the setup
@@ -84,4 +85,4 @@ void loop() {
 
 ### Reflection
 
-This assignment went smoothly for the most part! I was able to make the if...then code and variable without much trouble(thank you hour of code), but then I was stumped by how to get the variable number to increase! I got some good practice with googling, and then when I couldn't find anything I went into office hours with Mr. Dierolf and he explained it. I needed to add *counter=counter+1* in the loop function for *else*, which, in retrospect, seems obvious. So, I know how to do that now! 
+This assignment went smoothly for the most part! I was able to make the *if...then* code and variable without much trouble (thank you hour of code!), but then I was stumped by how to get the variable number to increase! I got some good practice with googling, and then when I couldn't find anything I went into office hours with Mr. Dierolf and he explained it. I needed to add *counter=counter+1* in the loop function for *else*, which, in retrospect, seems obvious. So, I know how to do that now! 
