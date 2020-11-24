@@ -2,7 +2,7 @@
 
 ## Table of Contents
 * [Hello Arduino](#Hello_Arduino)
-* [Finite LED Blinker] (#Finite_LED_Blinker) 
+* [Finite LED Blinker](#Finite_LED_Blinker) 
 
 ## Hello Arduino
 
@@ -84,4 +84,4 @@ void loop() {
 
 ### Reflection
 
-This assignment went smoothly for the most part! 
+This assignment went smoothly for the most part! I was able to make the if...then code and variable without much trouble(thank you hour of code), but then I was stumped by how to get the variable number to increase! I got some good practice with googling, and then when I couldn't find anything I went into office hours with Mr. Dierolf and he explained it. I needed to add *counter=counter+1* in the loop function for *else*, which, in retrospect, seems obvious. So, I know how to do that now! 
