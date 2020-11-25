@@ -133,7 +133,7 @@ void loop() {
 
 ### Image
 
-![Variable LED Blinker](/images/variableLED(1).gif)
+![Variable LED Blinker](/images/variableLED (1).gif)
 
 ### Reflection
 
