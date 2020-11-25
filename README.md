@@ -82,7 +82,7 @@ void loop() {
 
 ### Image
 
-![Finite LED Blinker](/images/finiteLED.mp4)
+![Finite LED Blinker](/images/finiteLED.gif)
 
 ### Reflection
 
