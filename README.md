@@ -137,4 +137,4 @@ void loop() {
 
 ### Reflection
 
-This assignment was fun! It was cool to try out coding with less instruction. I got to practice using the variable function, which I had some trouble with on the last assignment. I think that it is definitely more solidified in my head now. I also liked that the assignment let me change it up a little bit. I added in a second LED which started to blink once the delay stopped decreasing, and changed the text from the delayVar to "I did it!".
+This assignment was fun! I liked coding with less instruction. I got to practice using the variable function, which I had some trouble with on the last assignment. I think that it is definitely more solidified in my head now. I also liked that the assignment let me change it up a little bit. I added in a second LED which started to blink once the delay stopped decreasing, and changed the text from the delayVar to "I did it!".
