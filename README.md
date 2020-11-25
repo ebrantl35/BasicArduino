@@ -3,6 +3,7 @@
 ## Table of Contents
 * [Hello Arduino](#Hello_Arduino)
 * [Finite LED Blinker](#Finite_LED_Blinker) 
+* [Variable LED Blinker](#Variable_LED_Blinker)
 
 ## Hello Arduino
 
@@ -85,4 +86,55 @@ void loop() {
 
 ### Reflection
 
-This assignment went smoothly for the most part! I was able to make the *if...then* code and variable without much trouble (thank you hour of code!), but then I was stumped by how to get the variable number to increase! I got some good practice with googling, and then when I couldn't find anything I went into office hours with Mr. Dierolf and he explained it. I needed to add *counter=counter+1* in the loop function for *else*, which, in retrospect, seems obvious. So, I know how to do that now! 
+This assignment went smoothly for the most part! I was able to make the *if...then* code and variable without much trouble (thank you hour of code!), but then I was stumped by how to get the variable number to increase! I got some good practice with googling, and then when I couldn't find anything I went into office hours with Mr. Dierolf and he explained it. I needed to add *counter=counter+1* in the loop function for *else*, which, in retrospect, seems obvious. So, I know how to do that now!
+
+---
+
+## Variable LED Blinker
+
+### Description
+
+In this assignment, we were supposed to make a LED blink faster and faster by increments of 0.2 seconds. Once it reached 0.2 second blinks, it stopped decreasing.
+### Evidence
+
+```
+/*
+Evie Brantley 11/24/20
+This code blinks an LED for intervals decreasing by .2 seconds, then once it reaches.2 seconds, 
+stops decreasing and switches to a different LED.
+*/
+int ledPin = 8;
+int delayVar = 2000;
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  if (delayVar > 200) {//This causes the code to run only if delayVar is greater than 200.
+    Serial.println(delayVar);//This prints the delay time.
+    digitalWrite(ledPin, HIGH);
+    delay(delayVar);
+    digitalWrite(ledPin, LOW);
+    delay(delayVar);
+    delayVar = delayVar - 200; //This is what causes the decreasing delay time.
+  }
+  else {//This code blinks a light on and off for 0.2 seconds.
+    Serial.println("I did it!");
+    digitalWrite(7, HIGH);
+    delay(delayVar);
+    digitalWrite(7, HIGH);
+    delay(delayVar);
+  }
+
+}
+
+```
+
+### Image
+
+![Variable LED Blinker](/images/variableLED.gif)
+
+### Reflection
+
+This assignment was fun! It was cool to try out coding with less instruction. I got to practice using the variable function, which I had some trouble with on the last assignment. I think that it is definitely more solidified in my head now. I also liked that the assignment let me change it up a little bit. I added in a second LED which started to blink once the delay stopped decreasing, and changed the text from the delayVar to "I did it!".
