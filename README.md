@@ -95,6 +95,7 @@ This assignment went smoothly for the most part! I was able to make the *if...th
 ### Description
 
 In this assignment, we were supposed to make a LED blink faster and faster by increments of 0.2 seconds. Once it reached 0.2 second blinks, it stopped decreasing.
+
 ### Evidence
 
 ```
@@ -139,8 +140,14 @@ void loop() {
 
 This assignment was fun! I liked coding with less instruction. I got to practice using the variable function, which I had some trouble with on the last assignment. I think that it is definitely more solidified in my head now. I also liked that the assignment let me change it up a little bit. I added in a second LED which started to blink once the delay stopped decreasing, and changed the text from the delayVar to "I did it!".
 
+## Button-Activated LED
 
-just in case 
+### Description
+
+In this assignment, we were using a button to control whether or not an LED blinked. On the Arduino, we wired up an LED as usual, then added a button. I picked a pin and wired it to the breadboard, on the same row as one of the button's prongs. The button streched across the ravine, and then I connected one prong to 5V and one to a resistor. 
+
+### Evidence
+
 ```
 int ledPin = 2;
 int buttonPin = 12;
@@ -170,3 +177,8 @@ void loop() {
 }
 
 ```
+### Image
+ 
+![Button Activated LED](/images/baled.gif) 
+
+### Reflection
