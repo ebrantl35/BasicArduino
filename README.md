@@ -138,3 +138,35 @@ void loop() {
 ### Reflection
 
 This assignment was fun! I liked coding with less instruction. I got to practice using the variable function, which I had some trouble with on the last assignment. I think that it is definitely more solidified in my head now. I also liked that the assignment let me change it up a little bit. I added in a second LED which started to blink once the delay stopped decreasing, and changed the text from the delayVar to "I did it!".
+
+
+just in case 
+```
+int ledPin = 2;
+int buttonPin = 12;
+int buttonState = 0;
+int button# = 0;
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  pinMode(buttonPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);//this checks if the button is pressed or not
+  if (buttonState == HIGH) {
+    digitalWrite(ledPin, HIGH);
+    delay(200);
+    digitalWrite(ledPin, LOW);
+    delay(200);
+    Serial.println("Button ON");
+  }
+  else {
+    digitalWrite(ledPin, LOW);
+    Serial.println("Button OFF");
+
+  }
+}
+
+```
