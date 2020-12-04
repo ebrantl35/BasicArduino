@@ -1,10 +1,10 @@
 # BasicArduino
 
 ## Table of Contents
-* [Hello Arduino](##Hello_Arduino)
-* [Finite LED Blinker](##Finite_LED_Blinker) 
-* [Variable LED Blinker](##Variable_LED_Blinker)
-* [Button-Activated LED](##Button_Activated_LED)
+* [Hello Arduino](##Hello-Arduino)
+* [Finite LED Blinker](##Finite-LED-Blinker) 
+* [Variable LED Blinker](##Variable-LED-Blinker)
+* [Button-Activated LED](##Button-Activated-LED)
 
 ## Hello Arduino
 
