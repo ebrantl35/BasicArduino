@@ -182,3 +182,5 @@ void loop() {
 ![Button Activated LED](/images/baled.gif) 
 
 ### Reflection
+
+This assignment was a little bit confusing for me. I understood most of the coding involved, but I have no idea what I was doing with the button! I get why pressing the button activates the LED, but why is there a resistor on one end? And why does it connect to both a 5V and a pin? Shouldn't it connect to ground? My best guess is that the resistor is serving as the GND somehow, or maybe since it isn't drawing power from the computer, it doesn't need to connect to a negative on the Arduino. When I was coding for this assignment, it wasn't that difficult, so I attempted the challenge of making the button toggle the LED on and off, but I was completely mystified! I think that I would have to make it count whenever the button was pressed, then somehow check if that number was odd or even and make an if...then statement about it. Maybe I will try again next week! It might be easier if I can ask Mr. Dierolf about it during class.
