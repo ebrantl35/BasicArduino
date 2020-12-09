@@ -189,3 +189,62 @@ void loop() {
 This assignment was a little bit confusing for me. I understood most of the coding involved, but I have no idea what I was doing with the button! I get why pressing the button activates the LED, but why is there a resistor on one end? And why does it connect to both a 5V and a pin? Shouldn't it connect to ground? My best guess is that the resistor is serving as the GND somehow, or maybe since it isn't drawing power from the computer, it doesn't need to connect to a negative on the Arduino. When I was coding for this assignment, it wasn't that difficult, so I attempted the challenge of making the button toggle the LED on and off, but I was completely mystified! I think that I would have to make it count whenever the button was pressed, then somehow check if that number was odd or even and make an if...then statement about it. Maybe I will try again next week! It might be easier if I can ask Mr. Dierolf about it during class.
 
 ---
+
+## Two Buttons Two LEDs
+
+### Description
+
+This assignment was the exact same thing as the last assignment, except with two buttons and two LEDs. The only difference in the wiring is that one of the buttons was connected to 3.3V instead of 5V because there is only one 5V on the Arduino, but it still worked fine.
+
+### Evidence
+
+```
+/*
+  Evie Brantley 12/07/20
+  This code has two buttons which control two LEDs. When you pres one, it makes its corresponding
+  LED blink on and off.
+
+*/
+int ledPinBlue = 4;
+int ledPinGreen = 2;
+/*my LED pins*/
+int greenButtonPin = 12;
+int blueButtonPin = 8;
+/*my button pins*/
+int blueButtonState = 0;
+int greenButtonState = 0;
+/*measures if button is pressed*/
+
+void setup() {
+  pinMode(ledPinBlue, OUTPUT);
+  pinMode(ledPinGreen, OUTPUT);
+  pinMode(greenButtonPin, OUTPUT);
+  pinMode(blueButtonPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  blueButtonState = digitalRead(blueButtonPin);
+  greenButtonState = digitalRead(greenButtonPin);
+  if (blueButtonState == HIGH) { //if blue button is pushed
+    digitalWrite(ledPinBlue, HIGH);
+    delay(200);
+    digitalWrite(ledPinBlue, LOW);
+    delay(200);
+  }
+  if (greenButtonState == HIGH) { //if green button is pushed
+    digitalWrite(ledPinGreen, HIGH);
+    delay(200);
+    digitalWrite(ledPinGreen, LOW);
+    delay(200);
+  }
+}
+
+```
+### Image
+
+![Two Buttons Two LEDs](/images/twobuttontwoled.gif) 
+
+### Reflection
+
+This assignment was really simple because it was just a doubling of the last assignment. I did find out that I was missing a wire, which was a minor setback, but once I picked it up from CHS, everything went pretty smoothly. I did have one problem with a button which was not activating its light. At first I thought it was because it was plugged into 3.3V, but I eventually figured out that the button base was not fully pushed in. Something I gained from this assignment was I figured out how to switch the top of the buttons so that I can color code them with my LEDs.
