@@ -5,6 +5,7 @@
 * [Finite LED Blinker](##Finite-LED-Blinker) 
 * [Variable LED Blinker](##Variable-LED-Blinker)
 * [Button-Activated LED](##Button-Activated-LED)
+* [Two Buttons Two LEDs](##Two-Buttons-Two-LEDs) 
 
 ## Hello Arduino
 
@@ -248,3 +249,5 @@ void loop() {
 ### Reflection
 
 This assignment was really simple because it was just a doubling of the last assignment. I did find out that I was missing a wire, which was a minor setback, but once I picked it up from CHS, everything went pretty smoothly. I did have one problem with a button which was not activating its light. At first I thought it was because it was plugged into 3.3V, but I eventually figured out that the button base was not fully pushed in. Something I gained from this assignment was I figured out how to switch the top of the buttons so that I can color code them with my LEDs.
+
+---
