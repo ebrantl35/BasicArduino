@@ -251,3 +251,23 @@ void loop() {
 This assignment was really simple because it was just a doubling of the last assignment. I did find out that I was missing a wire, which was a minor setback, but once I picked it up from CHS, everything went pretty smoothly. I did have one problem with a button which was not activating its light. At first I thought it was because it was plugged into 3.3V, but I eventually figured out that the button base was not fully pushed in. Something I gained from this assignment was I figured out how to switch the top of the buttons so that I can color code them with my LEDs.
 
 ---
+
+## Servo Control
+
+### Description
+
+In this assignment, we used two buttons to control a servo. One button spun the servo in one direction, and the other button spun it in the other direction. To wire up the servo I got to practice using a header, which you plug into the breadboard. It has three wires: one for positive(5V), one for ground, and one for signal.
+
+### Evidence
+
+```
+
+```
+
+### Image
+
+### Reflection
+
+This assignment was definitely more difficult! The Arduino Editor's monitor was broken, making it much more difficult to test my code and wiring. I was also having some troubles with the button throughout the assignment, so I was never sure if the button was placed incorrectly or if my code was wrong. After a couple failed attempts, I eventually decided to just abandon the entire button aspect of the assignment and just focus on the servo. I made a new sketch in Arduino Editor called ServoTest, watched some YouTube videos on servos, and eventually was able to make the servo spin. When I went and tried to add the buttons back in, it stopped working again. This time I had a better grasp on the servos, so I was stumped. Since I couldn't use *Serial.println* to check, I went into office hours to ask Mr. Dierolf, the human debugger, what was going on and it turned out I had a lot more wrong than I thought! What I had thought was turning degrees actually controlled direction and speed of the servo, and I had some unneccesary code in there because of *myServo.attach*. Aside from learning how to use a servo, my main takeaways from this are to avoid using buttons at all costs, and to never take the serial monitor for granted again.
+
+---
