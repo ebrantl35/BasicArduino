@@ -6,6 +6,7 @@
 * [Variable LED Blinker](##Variable-LED-Blinker)
 * [Button-Activated LED](##Button-Activated-LED)
 * [Two Buttons Two LEDs](##Two-Buttons-Two-LEDs) 
+* [Servo Control](##Servo-Control)
 
 ## Hello Arduino
 
