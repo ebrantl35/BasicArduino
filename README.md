@@ -310,6 +310,8 @@ void loop() {
 
 ### Image
 
+![Servo Control](/images/ServoControl.gif)
+
 ### Reflection
 
 This assignment was definitely more difficult! The Arduino Editor's monitor was broken, making it much more difficult to test my code and wiring. I was also having some troubles with the button throughout the assignment, so I was never sure if the button was placed incorrectly or if my code was wrong. After a couple failed attempts, I eventually decided to just abandon the entire button aspect of the assignment and just focus on the servo. I made a new sketch in Arduino Editor called ServoTest, watched some YouTube videos on servos, and eventually was able to make the servo spin. When I went and tried to add the buttons back in, it stopped working again. This time I had a better grasp on the servos, so I was stumped. Since I couldn't use *Serial.println* to check, I went into office hours to ask Mr. Dierolf, the human debugger, what was going on and it turned out I had a lot more wrong than I thought! What I had thought was turning degrees actually controlled direction and speed of the servo, and I had some unneccesary code in there because of *myServo.attach*. Aside from learning how to use a servo, my main takeaways from this are to avoid using buttons at all costs, and to never take the serial monitor for granted again...
