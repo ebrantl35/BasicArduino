@@ -1,6 +1,6 @@
 # BasicArduino
 
-## Table of Contents
+# Table of Contents
 * [Hello Arduino](##Hello-Arduino)
 * [Finite LED Blinker](##Finite-LED-Blinker) 
 * [Variable LED Blinker](##Variable-LED-Blinker)
